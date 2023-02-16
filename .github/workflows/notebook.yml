@@ -1,0 +1,22 @@
+name: Run Jupyter Notebook
+
+jobs:
+  run_notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup=python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch==1.11.0 jupyter nbconvert
+      - name: Run notebook
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 --output-dir=. notebooks/01-Data-Preparation.ipynb
+          jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 --output-dir=. notebooks/02-Data-Exploration.ipynb
+          jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 --output-dir=. notebooks/03-Data-Modeling.ipynb
+          jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 --output-dir=. notebooks/04-Data-Visualization.ipynb
