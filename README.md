@@ -1,6 +1,6 @@
 # PyTorch-Tutorial
 
-This tutorial explaines PyTorch installation, basics of pytorch tensor and simple perceptron training using PyTorch.
+This tutorial explains PyTorch installation, basics of pytorch tensor and simple perceptron training using PyTorch.
 
 
 #### File Structure
