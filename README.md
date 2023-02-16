@@ -18,8 +18,8 @@ Web: https://pytorch.org/get-started/locally/
 
 Optional: create seperate virtual environment for installation of pytorch​
 
-    python3 -m venv pytorch​
-    source pytorch/bin/activate​
+    python3 -m venv pytorch
+    source pytorch/bin/activate
 
 
 #### Step-2: Verify installation with following sequence of commands in terminal.​
