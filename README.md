@@ -14,7 +14,7 @@ This tutorial explains PyTorch installation, basics of pytorch tensor and simple
 
 #### Step-1: Visit following website, Select the preferences and run the install command.​
 
-Web: https://pytorch.org/get-started/locally/​
+Web: https://pytorch.org/get-started/locally/
 
 Optional: create seperate virtual environment for installation of pytorch​
 
